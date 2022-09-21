@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 //@ActiveProfiles("default")
-class StandardCaptainRestControllerTest {
+class SharedCaptainRestControllerTest {
 
     @Autowired
     StandardCaptainRestController restController;
