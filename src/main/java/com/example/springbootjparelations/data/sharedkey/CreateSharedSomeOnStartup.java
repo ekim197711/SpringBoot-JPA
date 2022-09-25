@@ -17,7 +17,7 @@ public class CreateSharedSomeOnStartup {
     public void createEntities(){
         SharedSpaceShip pyramid = spaceShipRepository.save(
                 SharedSpaceShip.builder()
-                .description("PyramidOval")
+                .description("Pyramid")
                 .fuel(55)
                 .maxSpeed(22d)
                 .build());
@@ -30,13 +30,6 @@ public class CreateSharedSomeOnStartup {
                 .build());
         spaceShipRepository.save(pyramid);
 
-//        captainRepository.save(
-//                SharedCaptain.builder()
-//                        .name("Brian")
-//                        .bio("Smart guy")
-//                        .ship(pyramid)
-//                        .build()
-//        );
         log.info("Done creating default rows");
     }
 }
