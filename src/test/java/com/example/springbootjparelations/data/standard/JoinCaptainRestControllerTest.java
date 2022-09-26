@@ -1,16 +1,13 @@
 package com.example.springbootjparelations.data.standard;
 
+import com.example.springbootjparelations.data.onetoone.standard.StandardCaptain;
+import com.example.springbootjparelations.data.onetoone.standard.StandardCaptainRestController;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.util.Assert;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 //@ActiveProfiles("default")
