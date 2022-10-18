@@ -30,7 +30,7 @@ public class CreateJoinSomeOnStartup {
                 .build();
         JoinCaptain savedCaptain = captainRepository.save(joinCaptain);
         savedCaptain.setShip(pyramid);
-        captainRepository.save(joinCaptain);
+        captainRepository.save(savedCaptain);
         log.info("Done creating default rows");
     }
 
