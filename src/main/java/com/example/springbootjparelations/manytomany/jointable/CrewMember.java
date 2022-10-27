@@ -19,7 +19,7 @@ public class CrewMember {
     @Column(name = "crew_id")
     private Integer crewId;
     private String name;
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     @JoinTable(name = "crew_member_skills",
             joinColumns = @JoinColumn(referencedColumnName = "crew_id"),
             inverseJoinColumns = @JoinColumn(referencedColumnName = "skill_id")
