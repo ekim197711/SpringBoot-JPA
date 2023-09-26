@@ -1,9 +1,6 @@
 package com.example.springbootjparelations.manytomany.jointable;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -24,6 +21,8 @@ public class CrewMember {
             joinColumns = @JoinColumn(referencedColumnName = "crew_id"),
             inverseJoinColumns = @JoinColumn(referencedColumnName = "skill_id")
     )
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private List<Skill> skills;
 
 }

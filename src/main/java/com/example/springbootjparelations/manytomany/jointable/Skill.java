@@ -18,7 +18,8 @@ public class Skill {
     private Integer skillId;
     private String description;
     @ManyToMany(mappedBy = "skills")
-    @ToString.Exclude
     @JsonIgnore
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private List<CrewMember> crewMembers;
 }
